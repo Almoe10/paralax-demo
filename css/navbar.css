@@ -1,0 +1,35 @@
+#mainNav {
+	height: auto;
+	padding: 30px 0;
+	-webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+	transition: padding-top 0.3s, padding-bottom 0.3s;
+	background-color: transparent;
+}
+
+#mainNav.navbar-shrink {
+	padding: 5px 0;
+	background-color: #282E34;
+}
+
+#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active,
+#mainNav .navbar-toggler > .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus,
+	#mainNav .navbar-toggler > .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover{
+  	border-radius: 5px;
+  	background-color: #d6cfaf;
+}
+
+a {
+  	color: white;
+  	outline: 0;
+  	-webkit-transition: all 0.4s;
+  	transition: all 0.4s;
+}
+
+@media screen and (max-width: 767px){
+	#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active,
+	#mainNav .navbar-toggler > .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus,
+		#mainNav .navbar-toggler > .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover{
+	  	border-radius: 0px;
+	  	background-color: transparent;
+	}
+}

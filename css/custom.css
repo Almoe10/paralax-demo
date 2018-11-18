@@ -8,6 +8,14 @@ body, html {
   color: #666;
 }
 
+footer {
+  font-size: 14px;
+  padding: 60px 120px;
+  background-color: #666;
+  color: #FFF;
+  text-align: center;
+}
+
 .img1, .img2, .img3{
   position: relative;
   opacity: 0.66;
@@ -60,8 +68,53 @@ body, html {
   border-radius: 30px;
 }
 
+.text .transparent {
+  background-color: transparent;
+}
+
+<!--footer-->
+#myFooter {
+	flex: 0 0 auto;
+   	-webkit-flex: 0 0 auto;
+}
+
+#myFooter a {
+    font-size: 22px;
+    color: #d6cfaf;
+    padding: 10px;
+    transition: 0.2s;
+    line-height: 68px;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .discord:hover {
+    color: #0077e2;
+}
+
+#myFooter .email:hover {
+    color: #F9E381;
+}
+
+#myFooter .copyright {
+	color: #d6cfaf
+}
+
+<!--Media-->
 @media(max-width:568px) {
   .img1, .img2, .img3{
     background-attachment: scroll;
+  }
+  #myFooter {
+      text-align: center;
+  }
+
+  #myFooter .info{
+      text-align: center;
   }
 }
